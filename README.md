@@ -1,4 +1,32 @@
-# Getting Started with Create React App
+# OmniBot
+
+![Chatbot Icon](https://img.icons8.com/?size=100&id=44823&format=png&color=000000)
+
+OmniBot is an advanced AI chatbot designed to handle **text-to-text** and **text-to-code** prompts with ease. Powered by the **Google Gemini API** and built using **React.js**, OmniBot delivers fast and accurate responses, making it an ideal assistant for developers, learners, and anyone looking to streamline their workflows.
+
+---
+
+## Features
+
+- **Text-to-Text Prompts**: Seamlessly handle conversational or informational queries.
+- **Text-to-Code Prompts**: Generate efficient and readable code snippets for your programming needs.
+- **Dynamic UI**: A responsive and user-friendly interface built with React.js.
+- **AI-Powered Intelligence**: Backed by Google Gemini API for state-of-the-art performance.
+
+---
+
+## Technologies Used
+
+- **Frontend**: React.js
+- **AI Integration**: Google Gemini API
+- **Styling**: CSS and modern UI design principles
+- **Backend** (optional): Firebase for chat data storage (if applicable)
+
+---
+
+
+
+# Creatation Steps React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -45,26 +73,62 @@ You can learn more in the [Create React App documentation](https://facebook.gith
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+## Deploying OmniBot on Netlify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Follow these steps to deploy OmniBot on **Netlify**:
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Prerequisites
 
-### Making a Progressive Web App
+1. Ensure your project is set up and tested locally.
+2. Create a build of your React.js app.
+3. A Netlify account (sign up at [Netlify](https://www.netlify.com/) if you don’t have one).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
+### Deployment Steps
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+1. **Build the React App**:
+   Run the following command in your project directory:
+   ```bash
+   npm run build
+2. **Log In to Netlify**:
 
-### Deployment
+    - Go to Netlify.
+    - Log in with your credentials.
+  
+3. **Create a New Site**:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+    - Click on the "Add New Site" button.
 
-### `npm run build` fails to minify
+    - Select "Deploy manually".
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+5. **Upload the Build Folder**:
+
+    - Drag and drop the build folder (generated in Step 1) into the upload area on the Netlify dashboard.
+
+5. **Configure Environment Variables**:
+
+    - Go to the Site Settings.
+    - Under Environment Variables, click "Edit variables".
+    - Add your API key for the Google Gemini API:
+      ```bash
+      REACT_APP_GOOGLE_GEMINI_API_KEY=your_api_key_here
+
+6. **Set Build Commands (Optional)**:
+
+   - If you're connecting a Git repository to Netlify, set the following build commands:
+   - Build command: npm run build
+   - Publish directory: build
+
+7.**Deploy the App**:
+
+   - Netlify will automatically build and deploy the app.
+   - Once deployed, you’ll receive a unique domain name (e.g., https://omnibot.netlify.app).
+
+## 👩‍💻 Author
+Developed by Venkatesh Pamudurti
+
+[GitHub](https://github.com/Venkat5674/)
+[LinkedIn](https://www.linkedin.com/in/venkatesh-pamudurti-2a134a252/)
