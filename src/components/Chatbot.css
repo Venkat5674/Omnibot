@@ -1,0 +1,131 @@
+.chatbot-container {
+    width: 400px;
+    height: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .chatbot-header {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    text-align: center;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .robot-icon {
+    font-size: 30px;
+  }
+  
+  .chatbot-messages {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #ffffff33 #ffffff11;
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  .chatbot-messages .message {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 70%;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  .chatbot-messages .user {
+    align-self: flex-end;
+    background: #ffffff;
+    color: #333;
+    animation: slideInRight 0.5s ease;
+  }
+  
+  .chatbot-messages .bot {
+    align-self: flex-start;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    animation: slideInLeft 0.5s ease;
+  }
+  
+  .chatbot-footer {
+    display: flex;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.1);
+  }
+  
+  .chatbot-footer input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+  }
+  
+  .chatbot-footer button {
+    padding: 10px;
+    background: #2575fc;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  
+  .loader {
+    color: white;
+    font-style: italic;
+    margin: 10px;
+    animation: pulse 1.5s infinite;
+  }
+  
+  @keyframes pulse {
+    0%, 100% {
+      opacity: 0.5;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes slideInRight {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes slideInLeft {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  
